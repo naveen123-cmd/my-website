@@ -1,20 +1,11 @@
-{
-  "version": "0.2.0",
-  "configurations": [
+"version": "0.2.0",
+"configurations": [
     {
-      "name": "Run application",
-      "type": "node",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "console": "integratedTerminal",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": [
-        "run-script",
-        "start"
-      ],
-      "skipFiles": [
-        "<node_internals>/**"
-      ]
+        "type": "chrome",
+        "request": "launch",
+        "name": "Launch Chrome against localhost",
+        "url": "http://localhost:8080",
+        "webRoot": "${workspaceFolder}"
     }
-  ]
+]
 }
